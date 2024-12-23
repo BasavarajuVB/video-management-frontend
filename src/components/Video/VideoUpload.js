@@ -52,7 +52,7 @@ const VideoUpload = () => {
     try {
       const token = localStorage.getItem('token');
       const response = await axios.post(
-        'http://localhost:5000/api/videos/upload',
+        'https://video-manage-backend.onrender.com/api/videos/upload',
         formDataToSend,
         {
           headers: {

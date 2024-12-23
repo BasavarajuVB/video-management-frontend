@@ -43,7 +43,7 @@ const VideoList = () => {
   const fetchVideos = async () => {
     try {
       const token = localStorage.getItem('token');
-      const response = await axios.get('http://localhost:5000/api/videos', {
+      const response = await axios.get('https://video-manage-backend.onrender.com/api/videos', {
         headers: {
           'Authorization': `Bearer ${token}`
         }
